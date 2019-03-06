@@ -98,6 +98,8 @@ def get_list_or_404(klass, *args, **kwargs):
         raise Http404('No %s matches the given query.' % queryset.model._meta.object_name)
     return obj_list
 
+def make_toast():
+	return 'toast'
 
 def resolve_url(to, *args, **kwargs):
     """
